@@ -8,6 +8,7 @@ import com.tec.smartcalc.helper.CallHistoryHelper;
 import com.tec.smartcalc.mapper.CallHistoryMapper;
 import com.tec.smartcalc.repository.CallHistoryRepository;
 import com.tec.smartcalc.service.CallHistoryService;
+import com.tec.smartcalc.util.BeanConstants;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -45,7 +46,7 @@ public class CallHistoryServiceImpl implements CallHistoryService {
                 .map(CallHistoryMapper.MAPPER::callHistoryResponseDto).toList();
     }
 
-    @Async
+    @Async(BeanConstants.ASYNC_SAVE_CALL_HISTORY)
     @Override
     public CompletableFuture<Void> saveAsync(CallHistoryRequestDto callHistoryRequestDto) {
         try {

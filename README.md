@@ -1,8 +1,8 @@
 ## MICROSERVICIO DE CÁLCULO DE PORCENTAJE ```SMARTCALC```
 
-``Este microservicio tiene como objetivo realizar cálculos de porcentaje basados en datos obtenidos de un servicio externo. 
+Este microservicio tiene como objetivo realizar cálculos de porcentaje basados en datos obtenidos de un servicio externo. 
 El valor calculado se almacena en caché utilizando Redis para optimizar el rendimiento y reducir las llamadas innecesarias
- al servicio externo``
+ al servicio externo`
 
 ### FUNCIONES
 

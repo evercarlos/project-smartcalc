@@ -36,8 +36,8 @@ services:
     networks:
       - smartcalc
 
-  micro_smartcalc:
-    container_name: micro_smartcalc
+  smartcalc_micro:
+    container_name: smartcalc_micro
     depends_on:
       - smartcalc_pg
       - smartcalc_redis
